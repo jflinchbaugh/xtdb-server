@@ -1,0 +1,12 @@
+{:xtdb/index-store
+ {:kv-store {:xtdb/module xtdb.rocksdb/->kv-store
+             :db-dir "./indexes"}}
+ :xtdb/document-store
+ {:kv-store {:xtdb/module xtdb.rocksdb/->kv-store
+             :db-dir "./documents"}}
+ :xtdb/tx-log
+ {:kv-store {:xtdb/module xtdb.rocksdb/->kv-store
+             :db-dir "./tx-log"}}
+
+ :xtdb.http-server/server {:port 4321
+                           :jetty-opts {:host "localhost"}}}
