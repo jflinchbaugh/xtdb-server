@@ -7,7 +7,7 @@ Type=simple
 User=john
 WorkingDirectory=/home/john/xtdb-server
 Environment=JAVA_HOME=/home/john/.sdkman/candidates/java/current
-ExecStart=/bin/bash -l -c ". /.bashrc; ./run.sh"
+ExecStart=/bin/bash -l -c "./run.sh"
 Restart=always
 
 [Install]
