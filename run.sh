@@ -1,3 +1,3 @@
 #!/bin/sh
 
-clj -M -m xtdb.main
+clojure -M -m xtdb.main
