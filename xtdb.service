@@ -1,0 +1,14 @@
+[Unit]
+Description=XTDB server
+After=network.target
+
+[Service]
+Type=simple
+User=john
+WorkingDirectory=/home/john/xtdb-server
+Environment=JAVA_HOME=/home/john/.sdkman/candidates/java/current
+ExecStart=/bin/bash -l -c ". /.bashrc; ./run.sh"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
