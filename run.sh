@@ -1,3 +1,3 @@
 #!/bin/sh
 
-clojure -J-server -J-XX:MaxRAMPercentage=50 -J-XX:MinRAMPercentage=50 -M -m xtdb.main
+clojure -J-server -J-Xms64m -J-Xmx64m -M -m xtdb.main
